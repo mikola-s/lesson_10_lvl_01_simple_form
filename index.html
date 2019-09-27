@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple Form Page</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="nothing">
-    <form method="post" class="form">
-        <input type="text" name="name" placeholder="Введите имя"> </br>
-        <input type="text" name="surname" placeholder="а теперь фамилию"></br>
-        <input type="password" name="password" placeholder="загадайте пароль"></br>
-        <input type="submit" name="form_registration">
-        <input type="reset" name="cancel">
+<div class="outer_container">
+    <form method="post" name="simple_form" class="form_registration" action="rezult.html">
+        <div>
+            <label for="user_name">Введите свое имя</label><br>
+            <input type="text" id="user_name" class="user_name" placeholder="Да, сюда, свое имя"><br>
+        </div>
+        <div>
+            <label for="user_surname">а теперь еще и фамилию</label><br>
+            <input type="text" id="user_surname" placeholder="да, да, сюда вводить"><br>
+        </div>
+        <div>
+            <label for="password">а теперь придумайте пароль</label><br>
+            <input type="password" id="password" placeholder="обязательно такой шоб затбыть">
+        </div>
+        <div>
+            <p>
+                <input type="submit" name="form_registration" value="теперь жми сюда"> или
+                <input type="reset" name="cancel" value="все отменить">
+            </p>>
+        </div>
     </form>
 </div>
 </body>
